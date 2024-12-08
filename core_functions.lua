@@ -1,3 +1,14 @@
+-- Helper function to parse a coordinate with support for relative notation
+function ParseCoordinate(coord, relativeTo)
+    if coord:sub(1, 1) == "~" then
+        local offset = tonumber(coord:sub(2)) or 0
+        return math.floor(relativeTo + offset)
+    else
+        local num = tonumber(coord)
+        return num or 0  -- Return 0 if the coordinate is invalid
+    end
+end
+
 -- Returns the online mode UUID for a player name, if it exists
 -- Otherwise returns an offline UUID
 function GetPlayerUUID(PlayerName)
