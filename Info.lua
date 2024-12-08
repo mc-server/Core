@@ -71,6 +71,20 @@ g_PluginInfo =
 				},
 			},
 		},
+		
+		["/fill"] = 
+		{
+			Permission = "core.fill",
+			Handler = HandleFillCommand,
+			HelpString = "Fills a specified area with a given block type.",
+			ParameterCombinations =
+			{
+				{
+					Params = "<x1> <y1> <z1> <x2> <y2> <z2> <blockID>",
+					Help = "Fills the area between the coordinates (x1, y1, z1) and (x2, y2, z2) with the specified block type. Coordinates can use relative notation (e.g., ~1, ~-2).",
+				},
+			},
+		},
 
 		["/give"] = 
 		{

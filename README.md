@@ -13,6 +13,7 @@ Implements some of the basic commands needed to run a simple server.
 |/do | core.do | Runs a command as a player.|
 |/effect | core.effect | Adds an effect to a player.|
 |/enchant | core.enchant | Adds an enchantment to a specified player's held item.|
+|/fill | core.fill | Fills a defined region with the specified block type.|
 |/gamemode | core.changegm | Changes a player's gamemode.|
 |/give | core.give | Gives an item to a player.|
 |/help | core.help | Shows available commands.|
@@ -80,6 +81,7 @@ Implements some of the basic commands needed to run a simple server.
 | core.effect |  | `/effect` |  |
 | core.enchant | Allows players to add an enchantment to a player's held item. | `/enchant` | admins |
 | core.enchant.self | Allows players to add an enchantment to their own held item. | `/ienchant` | admins |
+| core.fill | Allows players to fill an area with a specified block type. | `/fill` | admins |
 | core.give | Allows players to give items to other players. | `/give` | admins |
 | core.give.unsafe | Allows players to give items to other players, even if the item is blacklisted. | `/unsafegive` | none |
 | core.help |  | `/help` |  |
